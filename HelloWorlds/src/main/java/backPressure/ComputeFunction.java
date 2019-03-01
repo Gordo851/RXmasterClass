@@ -2,7 +2,8 @@ package backPressure;
 
 import io.reactivex.Observable;
 
-/*use sleeps to make an observable produce every half a second and an observable that 
+/*
+ * use sleeps to make an observable produce every half a second and an observable that 
  * consumes every second
  * 
  */

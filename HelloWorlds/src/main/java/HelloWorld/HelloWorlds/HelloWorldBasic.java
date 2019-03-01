@@ -6,7 +6,7 @@ public class HelloWorldBasic {
 	public void helloWorldBasic()
     {
         Observable<String> observable = Observable.just("Hello", " ", "World");
-        observable.subscribe(System.out::println);
+        observable.subscribe(System.out::print);
     
     }
 }

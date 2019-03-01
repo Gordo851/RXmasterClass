@@ -8,6 +8,7 @@ public class BetterHelloWorld {
 	
 		Observable<String> observable = Observable.create(s -> {
 			s.onNext("Hello");
+			s.onNext(" ");
 			s.onNext("World");
 		});
 		
