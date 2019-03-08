@@ -5,8 +5,8 @@ import io.reactivex.Observable;
 public class HelloWorldBasic {
 	public void helloWorldBasic()
     {
-        Observable<String> observable = Observable.just("Hello", " ", "World");
-        observable.subscribe(System.out::print);
+        Observable<String> observable = Observable.just("Hello", " ", "World", "\n");
+        observable.subscribe(line -> System.out.print(line));
     
     }
 }

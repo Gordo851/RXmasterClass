@@ -8,11 +8,13 @@ public class BestestHelloWorld {
 	
 		Observable<String> observable = Observable.create(s -> {
 			s.onNext("Hello");
+			s.onNext(" ");
 			s.onNext("World");
+			s.onNext("Hello");
 		});
 		
 		observable
-		.filter(thisString -> !thisString.equals("World"))
+		.filter(thisString -> thisString.equals("Hello"))
 		.map(thisString -> thisString + " world")
 		.subscribe(System.out::println);
 	}
